@@ -8,14 +8,14 @@ password = "Password123!"
 
 
 Switch1 = {
-    "host": "192.168.243.146",
+    "host": "10.5.20.11",
     "username": username,
     "password": password,
     "device_type": "cisco_ios",
 }
 
 Switch2 = {
-    "host": "192.168.243.149",
+    "host": "192.168.100.240",
     "username": username,
     "password": password,
     "device_type": "cisco_ios",
@@ -75,13 +75,13 @@ for x in myswitches:
     print("_________" + hostname + "__________" + "\n" + "CPU Stats ------> 5 seconds: " + cpu5sec + "%, 1 minute: " + cpu1min + "%, 5 min: " + cpu5min + "%\n"
     + "\n\n" )
     print("---->KEY INTERFACE STATS" + "\n")
-    print(showint[0]['interface'] + "\n" + "Status: " + stat0 + "\n" + "Protocol: " + prot0 + "\n" + "Duplex: " + 
-    duplex0 + "\n" + "Input Errors: " + inputerrors0 + "\n" + "Spanning-Tree Status: " + spanstat0 + "\n" + "IP Address: " + 
+    print(showint[0]['interface'] + "\n" + "Status: " + stat0 + "\n" + "Protocol: " + prot0 + "\n" + "Duplex: " +
+    duplex0 + "\n" + "Input Errors: " + inputerrors0 + "\n" + "Spanning-Tree Status: " + spanstat0 + "\n" + "IP Address: " +
     ipadd0 + "\n")
-    print(showint[1]['interface'] + "\n" + "Status: " + stat1 + "\n" + "Protocol: " + prot1 + "\n" + "Duplex: " + 
-    duplex1 + "\n" + "Input Errors: " + inputerrors1 + "\n" + "Spanning-Tree Status: " + spanstat1 + "\n" + "IP Address: " + 
+    print(showint[1]['interface'] + "\n" + "Status: " + stat1 + "\n" + "Protocol: " + prot1 + "\n" + "Duplex: " +
+    duplex1 + "\n" + "Input Errors: " + inputerrors1 + "\n" + "Spanning-Tree Status: " + spanstat1 + "\n" + "IP Address: " +
     ipadd1 + "\n")
-    print(showint[2]['interface'] + "\n" + "Status: " + stat2 + "\n" + "Protocol: " + prot2 + "\n" + "Duplex: " + 
-    duplex2 + "\n" + "Input Errors: " + inputerrors2 + "\n" + "Spanning-Tree Status: " + spanstat2 + "\n" + "IP Address: " + 
+    print(showint[2]['interface'] + "\n" + "Status: " + stat2 + "\n" + "Protocol: " + prot2 + "\n" + "Duplex: " +
+    duplex2 + "\n" + "Input Errors: " + inputerrors2 + "\n" + "Spanning-Tree Status: " + spanstat2 + "\n" + "IP Address: " +
     ipadd2 + "\n")
     net_connect.disconnect()
